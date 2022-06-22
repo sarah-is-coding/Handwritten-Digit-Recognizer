@@ -40,7 +40,7 @@ git pull
 
 https://youtu.be/5mDYijMfSzs
 
-### From the anaconda navigator launch Powershell Prompt and run these commands:
+### From the Anaconda Navigator launch Powershell Prompt and run these commands:
 
 conda create -n tensorflow_env tensorflow
 
