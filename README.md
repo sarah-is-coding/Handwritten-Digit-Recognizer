@@ -10,6 +10,23 @@ For training and testing the model, we will use python. For creating the two
 UIs we plan to use Kivy to create a desktop application and then package it
 for Android.
 
+### Installing Git on Windows
+
+https://www.computerhope.com/issues/ch001927.htm
+
+### Using Git
+
+When first adding a file:
+git add "filename"
+git commit -m "message"
+git push
+When making edits to a file:
+git add .
+git commit -m "message"
+git push
+Do often to see updates made by other people:
+git pull
+
 ### Install Anaconda
 
 https://youtu.be/5mDYijMfSzs
