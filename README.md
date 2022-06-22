@@ -10,13 +10,13 @@ For training and testing the model, we will use python. For creating the two
 UIs we plan to use Kivy to create a desktop application and then package it
 for Android.
 
-## Install Anaconda
+### Install Anaconda
 
 https://youtu.be/5mDYijMfSzs
 
-## From the anaconda navigator launch Powershell Prompt
+### From the anaconda navigator launch Powershell Prompt
 
-## Run these commands:
+### Run these commands:
 
 conda create -n tensorflow_env tensorflow
 
