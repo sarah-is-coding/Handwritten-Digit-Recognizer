@@ -12,7 +12,9 @@ for Android.
 
 ## Install Anaconda
 
-From the anaconda navigator launch Powershell Prompt
+https://youtu.be/5mDYijMfSzs
+
+## From the anaconda navigator launch Powershell Prompt
 
 ## Run these commands:
 
