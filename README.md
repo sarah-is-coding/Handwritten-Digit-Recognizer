@@ -16,7 +16,7 @@ https://www.computerhope.com/issues/ch001927.htm
 
 ### Using Git Bash
 
-#### When first adding a file:
+##### When first adding a file:
 
 git add "filename"
 
@@ -24,7 +24,7 @@ git commit -m "message"
 
 git push
 
-#### When making edits to a file:
+##### When making edits to a file:
 
 git add .
 
@@ -32,7 +32,7 @@ git commit -m "message"
 
 git push
 
-#### Do often to see updates made by other people:
+##### Do often to see updates made by other people:
 
 git pull
 
@@ -40,9 +40,7 @@ git pull
 
 https://youtu.be/5mDYijMfSzs
 
-### From the anaconda navigator launch Powershell Prompt
-
-### Run these commands:
+### From the anaconda navigator launch Powershell Prompt and run these commands:
 
 conda create -n tensorflow_env tensorflow
 
