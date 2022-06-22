@@ -17,11 +17,17 @@ From the anaconda navigator launch Powershell Prompt
 Run these commands:
 
 conda create -n tensorflow_env tensorflow
+
 conda activate tensorflow_env
+
 conda install -c anaconda keras
+
 conda install -c anaconda pandas
+
 conda install -c conda-forge matplotlib
 
 conda install kivy -c conda-forge
+
 pip install seaborn
+
 conda install -c anaconda scikit-learn
