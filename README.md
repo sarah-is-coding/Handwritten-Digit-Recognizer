@@ -14,7 +14,7 @@ for Android.
 
 https://www.computerhope.com/issues/ch001927.htm
 
-### Using Git
+### Using Git Bash
 
 #### When first adding a file:
 
