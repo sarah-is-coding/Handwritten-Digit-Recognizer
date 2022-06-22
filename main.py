@@ -1,171 +1,68 @@
+import tensorflow as tf
+
+from random import random 
 from kivy.app import App 
-
-from kivy.lang import Builder 
-
 from kivy.uix.widget import Widget 
+from kivy.uix.button import Button 
+from kivy.graphics import Color, Ellipse, Line
+from kivy.core.window import Window
 
-from kivy.properties import ColorProperty 
+import numpy as np
 
-  
+model = tf.keras.models.load_model('mnist_digit_model')
 
-class GridCell(Widget): 
+global inputmatrix
+inputmatrix = np.zeros((28,28), dtype=np.int0)
 
-    color = ColorProperty('#ffffffff') 
-
-  
-
-    # Change cell's color to pencil_color if a touch event 
-
-    # collides on press or drag (_move) 
-
+class MyPaintWidget(Widget): 
     def on_touch_down(self, touch): 
-
-        if self.collide_point(*touch.pos): 
-
-            self.color = App.get_running_app().pencil_color 
-
-            return True 
-
-        return super().on_touch_down(touch) 
-
-  
+        with self.canvas: 
+            Color(255,255,255) 
+            d = 30. 
+            Ellipse(pos=(touch.x - d / 2, touch.y - d / 2), size=(d, d)) 
+            touch.ud['line'] = Line(points=(touch.x, touch.y), width =20)
+            self.update_output(touch)
 
     def on_touch_move(self, touch): 
+        touch.ud['line'].points += [touch.x, touch.y]
+        self.update_output(touch)
 
-        if self.collide_point(*touch.pos): 
+    def update_output(self, touch):
+        x_ind = int((touch.x/Window.size[0])*28)
+        y_ind = int((touch.y/Window.size[1])*28)
+        inputmatrix[28-y_ind][x_ind] = 1
 
-            self.color = App.get_running_app().pencil_color 
+        grid = inputmatrix.reshape(-1, 28 * 28)*255
+        print(np.argmax(model.predict(grid)))
 
-            return True 
-
-        return super().on_touch_move(touch) 
-
-  
-
-KV = ''' 
-
-#:import random random.random 
-
-  
-
-# Draw rectangle at cell size/position using current color 
-
-<GridCell>: 
-
-    canvas: 
-
-        Color: 
-
-            rgba: self.color 
-
-        Rectangle: 
-
-            pos: self.pos 
-
-            size: self.size 
-
-  
-
-BoxLayout: 
-
-    orientation: 'vertical' 
-
-    # The AnchorLayout centers the grid, plus it serves to determine 
-
-    # the available space via min(*self.parent.size) below 
-
-    AnchorLayout: 
-
-        GridLayout: 
-
-            id: grid 
-
-            rows: 28 
-
-            cols: 28 
-
-            size_hint: None, None 
-
-            # Use the smallest of width/height to make a square grid. 
-
-            # The "if not self.parent" condition handles parent=None 
-
-            # during initial construction, it will crash otherwise 
-
-            width: 100 if not self.parent else min(*self.parent.size) 
-
-            height: self.width 
-
-    BoxLayout: 
-
-        orientation: 'horizontal' 
-
-        size_hint_y: None 
-
-        GridCell: 
-
-            color: app.pencil_color 
-
-        Button: 
-
-            text: 'Red' 
-
-            on_release: app.pencil_color = '#ff0000' 
-
-        Button: 
-
-            text: 'Green' 
-
-            on_release: app.pencil_color = '#00ff00' 
-
-        Button: 
-
-            text: 'Blue' 
-
-            on_release: app.pencil_color = '#0000ff' 
-
-        Button: 
-
-            text: 'Random' 
-
-            on_release: app.pencil_color = [random(), random(), random(), 1] 
-
-        Button: 
-
-            text: 'Clear' 
-
-            on_release: [setattr(x, 'color', '#ffffffff') for x in grid.children] 
-
-        Button: 
-
-            text: 'Save out.png' 
-
-            on_release: grid.export_to_png('out.png') 
-
-''' 
-
-  
-
-class PixelGridApp(App): 
-
-    pencil_color = ColorProperty('#ff0000ff') 
-
-  
-
+class MyPaintApp(App): 
     def build(self): 
+        Window.size = (600,600)
 
-        root = Builder.load_string(KV) 
+        parent = Widget() 
+        self.painter = MyPaintWidget() 
+        clearbtn = Button(text='Clear', pos=(0,0), size=(50,50)) 
+        clearbtn.bind(on_release=self.clear_canvas) 
+        parent.add_widget(self.painter) 
+        parent.add_widget(clearbtn) 
 
-        grid = root.ids.grid 
+        printinput = Button(text='Print', pos=(50,0), size=(50,50))
+        global inputmatrix
+        printinput.bind(on_release=self.print_input) 
+        parent.add_widget(printinput) 
 
-        for i in range(grid.rows * grid.cols): 
+        return parent 
 
-            grid.add_widget(GridCell()) 
+    def clear_canvas(self, obj): 
+        self.painter.canvas.clear()
 
-        return root 
+        global inputmatrix
+        inputmatrix = np.zeros((28,28), dtype=np.int0)
 
-  
+    def print_input(self, obj):
+        global inputmatrix
+        print(inputmatrix)
+
 
 if __name__ == '__main__': 
-
-    PixelGridApp().run() 
+    MyPaintApp().run()

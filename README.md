@@ -10,5 +10,18 @@ For training and testing the model, we will use python. For creating the two
 UIs we plan to use Kivy to create a desktop application and then package it
 for Android.
 
-Data:
-https://www.kaggle.com/competitions/digit-recognizer/data
+Install Anaconda
+
+From the anaconda navigator launch Powershell Prompt
+
+Run these commands:
+
+conda create -n tensorflow_env tensorflow
+conda activate tensorflow_env
+conda install -c anaconda keras
+conda install -c anaconda pandas
+conda install -c conda-forge matplotlib
+
+conda install kivy -c conda-forge
+pip install seaborn
+conda install -c anaconda scikit-learn
