@@ -70,4 +70,3 @@ start an activated command line, e.g. Anaconda Prompt or Anaconda Powershell Pro
 
 start your IDE from the activated command line (e.g. by issuing code to open VS Code)
 
-you can use numpy package while debugging pytest
