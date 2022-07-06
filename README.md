@@ -59,3 +59,15 @@ conda install kivy -c conda-forge
 pip install seaborn
 
 conda install -c anaconda scikit-learn
+
+### To run code in Visual Studio
+
+Start VS Code from an Activated environment
+
+make sure you have numpy installed into a conda env, e.g. to base
+
+start an activated command line, e.g. Anaconda Prompt or Anaconda Powershell Prompt
+
+start your IDE from the activated command line (e.g. by issuing code to open VS Code)
+
+you can use numpy package while debugging pytest
