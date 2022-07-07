@@ -1,7 +1,6 @@
 # Handwritten-Digit-Recognizer
 
-Trained a model so that given a picture of a digit the model
-will recognize the digit. Used a convolutional Neural Network. 
+Handwrite any digit 1-9 using this GUI and a CNN model will display it's prediction of which digit you drew. 
 
 # For Newbs:
 
