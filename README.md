@@ -54,13 +54,9 @@ pip install seaborn
 
 conda install -c anaconda scikit-learn
 
-### To run code in Visual Studio
+### Now with a terminal open in the tensorflow_env
 
-Start VS Code from an Activated environment
+run command 'code' to open VS Code in the tensorflow_env
 
-make sure you have numpy installed into a conda env, e.g. to base
-
-start an activated command line, e.g. Anaconda Prompt or Anaconda Powershell Prompt
-
-start your IDE from the activated command line (e.g. by issuing code to open VS Code)
+open folder containing main.py and the mnist_digit_model folder and run main.py
 
