@@ -1,6 +1,6 @@
 # Handwritten-Digit-Recognizer
 
-[![Watch the video](https://imgur.com/a/i79j5rw)](https://youtu.be/WN_lL2pSHnw)
+[![Watch the video](https://i.imgur.com/a/i79j5rw)](https://youtu.be/WN_lL2pSHnw)
 
 
 Handwrite any digit 1-9 using this GUI and a CNN model will display it's prediction of which digit you drew. 
