@@ -3,7 +3,7 @@
 [![Watch the video](https://i.imgur.com/zTjsQO8.png)](https://youtu.be/WN_lL2pSHnw)
 
 
-Handwrite any digit 1-9 using this GUI and a CNN model will display it's prediction of which digit you drew. 
+Handwrite any digit 1-9 using this GUI and this CNN model will predict which digit you drew. 
 
 # For Newbs:
 
