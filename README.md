@@ -56,7 +56,7 @@ conda install -c anaconda scikit-learn
 ### Now from the Anaconda Navigator, make sure you have selected the tensorflow_env under
 ### environments and launch a powershell prompt
 
-run command 'code' to open VS Code in the tensorflow_env
+run command 'code' to open VS Code in the tensorflow_env (do not open VS code from anywhere else, you will get errors when running the project)
 
 open folder containing main.py and the mnist_digit_model folder and run main.py
 
