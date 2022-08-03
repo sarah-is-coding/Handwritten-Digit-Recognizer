@@ -11,23 +11,13 @@ Handwrite any digit 1-9 using this GUI and this CNN model will predict which dig
 
 https://www.computerhope.com/issues/ch001927.htm
 
-### Using Git Bash
+### Cloning the repo
 
-##### When first adding a file:
+##### In git bash run:
 
-git add "filename"
+git clone git@github.com:sgmdoc7/Handwritten-Digit-Recognizer.git
 
-git commit -m "message"
-
-git push
-
-##### When making edits to a file:
-
-git add .
-
-git commit -m "message"
-
-git push
+##### This will copy the repo and files onto your computer
 
 ##### Do often to see updates made by other people:
 
