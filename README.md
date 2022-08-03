@@ -57,7 +57,8 @@ pip install seaborn
 
 conda install -c anaconda scikit-learn
 
-### Now with a terminal open in the tensorflow_env
+### Now from the Anaconda Navigator, make sure you have selected the tensorflow_env under
+### environments and launch a powershell prompt
 
 run command 'code' to open VS Code in the tensorflow_env
 
