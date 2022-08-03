@@ -33,6 +33,7 @@ git clone git@github.com:sgmdoc7/Handwritten-Digit-Recognizer.git
 https://youtu.be/5mDYijMfSzs
 
 ### From the Anaconda Navigator launch Powershell Prompt and run these commands:
+#### Here we are creating a new environment with tensorflow which is needed for this project
 
 conda create -n tensorflow_env tensorflow
 
