@@ -11,6 +11,10 @@ Handwrite any digit 1-9 using this GUI and this CNN model will predict which dig
 
 https://www.computerhope.com/issues/ch001927.htm
 
+### Set up SSH key
+
+https://youtu.be/_e4Xf6g_yXg
+
 ### Cloning the repo
 
 ##### In git bash run:
