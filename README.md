@@ -15,6 +15,10 @@ https://www.computerhope.com/issues/ch001927.htm
 
 https://youtu.be/_e4Xf6g_yXg
 
+or
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
 ### Cloning the repo
 
 ##### In git bash run:
