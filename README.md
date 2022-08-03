@@ -27,9 +27,6 @@ git clone git@github.com:sgmdoc7/Handwritten-Digit-Recognizer.git
 
 ##### This will copy the repo and files onto your computer
 
-##### Do often to see updates made by other people:
-
-git pull
 
 ### Install Anaconda
 
