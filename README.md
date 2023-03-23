@@ -4,15 +4,15 @@
 
 This project is aimed to recognize handwritten digits using a Convolutional Neural Network (CNN) model and a Graphical User Interface (GUI) developed using Kivy.
 
-Requirements
-Python 3.7 or later
-TensorFlow 2.x
-Kivy 2.x
-NumPy
-Pandas
-Matplotlib
-Seaborn
-Scikit-Learn
+## Requirements
+* Python 3.7 or later
+* TensorFlow 2.x
+* Kivy 2.x
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-Learn
 
 ## Dataset
 The dataset used for training and testing the CNN model is the MNIST (Modified National Institute of Standards and Technology) dataset, which is a large database of handwritten digits. The dataset consists of 60,000 training images and 10,000 testing images.
