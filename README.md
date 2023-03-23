@@ -29,6 +29,8 @@ The GUI developed using Kivy allows the user to draw a digit using the mouse or 
 
 The predicted digit is displayed on a label below the grid. The user can also click the "Clear" button to erase the drawing and reset the prediction.
 
+## Jupyter Notebook
+https://www.kaggle.com/code/sgdoc7/handwritten-digit-recognizer
 
 
 # Notes for Running the code:
