@@ -1,4 +1,4 @@
-# Handwritten Digit Recognition using Convolutional Neural Networks and Kivy GUI
+# Handwritten Digit Recognition using Convolutional Neural Network and Kivy GUI
 
 [![Watch the video](https://i.imgur.com/UOjS2aI.png)](https://www.youtube.com/watch?v=vUb86aDjG24)
 
