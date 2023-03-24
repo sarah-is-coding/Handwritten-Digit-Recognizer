@@ -1,8 +1,7 @@
-# Handwritten Digit Recognition using Convolutional Neural Networks and Kivy GUI
+# Handwritten Digit Recognition using Convolutional Neural Network and Kivy GUI
 
-[![Watch the video](https://i.imgur.com/dovjDDE.png)](https://youtu.be/5fkt60Ly88M)
-
-This project is aimed to recognize handwritten digits using a Convolutional Neural Network (CNN) model and a Graphical User Interface (GUI) developed using Kivy. Click on the image above to see it working.
+<img src="https://i.imgur.com/UOjS2aI.png" width=75% height=75%>
+Demonstration video: https://www.youtube.com/watch?v=vUb86aDjG24
 
 ## Requirements
 * Python 3.7 or later
@@ -29,9 +28,13 @@ The GUI developed using Kivy allows the user to draw a digit using the mouse or 
 
 The predicted digit is displayed on a label below the grid. The user can also click the "Clear" button to erase the drawing and reset the prediction.
 
-## Future Improvments
-Improve look of the GUI
+## Jupyter Notebook
+https://www.kaggle.com/code/sgdoc7/handwritten-digit-recognizer
 
+## Future Improvements Checklist
+* Implement real time digit recognition
+* Multiple digit recognition
+* Handwritten letters or even words
 
 # Notes for Running the code:
 
@@ -84,7 +87,7 @@ conda install -c anaconda scikit-learn
 ### Now from the Anaconda Navigator, make sure you have selected the tensorflow_env under
 ### environments and launch a powershell prompt
 
-run command 'code' to open VS Code in the tensorflow_env 
+run command 'code' to open VS Code in the tensorflow_env or open from anaconda navigator
 
 open folder containing main.py and the mnist_digit_model folder and run main.py
 
