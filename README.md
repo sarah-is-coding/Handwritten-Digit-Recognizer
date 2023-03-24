@@ -29,6 +29,8 @@ The GUI developed using Kivy allows the user to draw a digit using the mouse or 
 
 The predicted digit is displayed on a label below the grid. The user can also click the "Clear" button to erase the drawing and reset the prediction.
 
+## Future Improvments
+Improve look of the GUI
 
 
 # Notes for Running the code:
