@@ -1,6 +1,6 @@
 # Handwritten Digit Recognition using Convolutional Neural Networks and Kivy GUI
 
-[![Watch the video](https://i.imgur.com/dovjDDE.png)](https://www.youtube.com/watch?v=XUQG8yGwBA0)
+[![Watch the video](https://i.imgur.com/dovjDDE.png)](https://www.youtube.com/watch?v=vUb86aDjG24)
 
 This project is aimed to recognize handwritten digits using a Convolutional Neural Network (CNN) model and a Graphical User Interface (GUI) developed using Kivy. Click on the image above to see it working.
 
