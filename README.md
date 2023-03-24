@@ -32,7 +32,7 @@ The predicted digit is displayed on a label below the grid. The user can also cl
 https://www.kaggle.com/code/sgdoc7/handwritten-digit-recognizer
 
 ## Future Improvements Checklist
-* Implement real time digit recognition
+
 * Multiple digit recognition
 * Handwritten letters or even words
 
