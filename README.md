@@ -2,7 +2,7 @@
 
 [![Watch the video](https://i.imgur.com/dovjDDE.png)](https://youtu.be/5fkt60Ly88M)
 
-This project is aimed to recognize handwritten digits using a Convolutional Neural Network (CNN) model and a Graphical User Interface (GUI) developed using Kivy.
+This project is aimed to recognize handwritten digits using a Convolutional Neural Network (CNN) model and a Graphical User Interface (GUI) developed using Kivy. Click on the image above to see it working.
 
 ## Requirements
 * Python 3.7 or later
