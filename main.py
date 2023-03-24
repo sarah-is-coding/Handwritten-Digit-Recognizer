@@ -34,22 +34,33 @@ class Buttons(Widget):
 # Define the Kivy language string for UI elements
 KV = '''
 #:import random random.random
+#:import sp kivy.metrics.sp
 
 <GridCell>:
     canvas:
         Color:
             rgba: self.color
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [sp(4),]
+
+BoxLayout:
+    canvas.before:
+        Color:
+            rgba: 0.9, 0.9, 0.9, 1
         Rectangle:
             pos: self.pos
             size: self.size
-
-BoxLayout:
     orientation: 'vertical'
+    padding: sp(10)
+    spacing: sp(10)
     AnchorLayout:
         GridLayout:
             id: grid
             rows: 28
             cols: 28
+            spacing: sp(2)
             size_hint: None, None
             width: 100 if not self.parent else min(*self.parent.size)
             height: self.width
@@ -57,17 +68,25 @@ BoxLayout:
     BoxLayout:
         orientation: 'horizontal'
         size_hint_y: None
+        height: sp(50)
+        spacing: sp(10)
         Button:
             text: 'Clear'
+            background_color: 0.5, 0.5, 0.5, 1
+            background_normal: ''
             on_release: [setattr(x, 'color', '#ffffffff') for x in grid.children]
             on_release: app.reset_prediction()
 
         Label:
             id: prediction
             text: 'Prediction: _'
+            font_size: sp(20)
+            color: 0.2, 0.2, 0.2, 1
 
         Button:
             text: 'Submit'
+            background_color: 0.2, 0.6, 0.8, 1
+            background_normal: ''
             on_release: app.get_prediction(grid.children)
 '''
 
