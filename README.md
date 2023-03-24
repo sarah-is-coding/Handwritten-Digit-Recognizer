@@ -24,7 +24,7 @@ The model is trained using the categorical cross-entropy loss function and the R
 After training, the model is saved in a file named mnist_digit_model in the current directory.
 
 ## GUI
-The GUI developed using Kivy allows the user to draw a digit using the mouse or touchpad on a 28x28 grid of squares. Each square can be colored with black or white, representing the presence or absence of the digit at that location. The user can then click the "Submit" button to have the CNN model predict the digit drawn.
+The GUI developed using Kivy allows the user to draw a digit using the mouse or touchpad on a 28x28 grid of squares. Each square can be colored with black or white, representing the presence or absence of the digit at that location. The CNN model will then predict the digit drawn.
 
 The predicted digit is displayed on a label below the grid. The user can also click the "Clear" button to erase the drawing and reset the prediction.
 
