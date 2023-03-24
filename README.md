@@ -4,6 +4,8 @@
 Video of it working: https://www.youtube.com/watch?v=vUb86aDjG24
 
 
+
+
 This project is aimed to recognize handwritten digits using a Convolutional Neural Network (CNN) model and a Graphical User Interface (GUI) developed using Kivy. 
 
 ## Requirements
