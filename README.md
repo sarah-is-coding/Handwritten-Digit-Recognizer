@@ -1,7 +1,7 @@
 # Handwritten Digit Recognition using Convolutional Neural Network and Kivy GUI
 
 <img src="https://i.imgur.com/UOjS2aI.png" width=75% height=75%>
-Demonstration video: [https://www.youtube.com/watch?v=vUb86aDjG24](https://youtu.be/1o999abiXUw?si=A5xtbF6QhSW6VYUH)
+Demonstration video: https://youtu.be/1o999abiXUw?si=A5xtbF6QhSW6VYUH
 
 ## Requirements
 * Python 3.7 or later
