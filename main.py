@@ -9,7 +9,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # Load the pretrained model
-model = tf.keras.models.load_model('mnist_digit_model')
+model = tf.keras.models.load_model('mnist_digit_model.keras')
 
 # Define the custom widget GridCell
 class GridCell(Widget):

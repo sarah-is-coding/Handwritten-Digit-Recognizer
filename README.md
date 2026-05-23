@@ -4,7 +4,7 @@
 Demonstration video: https://youtu.be/1o999abiXUw?si=A5xtbF6QhSW6VYUH
 
 ## Requirements
-* Python 3.7 or later
+* Python 3.9–3.11
 * TensorFlow 2.x
 * Kivy 2.x
 * NumPy
@@ -28,66 +28,51 @@ The GUI developed using Kivy allows the user to draw a digit using the mouse or 
 
 The predicted digit is displayed on a label below the grid. The user can also click the "Clear" button to erase the drawing and reset the prediction.
 
-## Jupyter Notebook
-https://www.kaggle.com/code/sgdoc7/handwritten-digit-recognizer
-
 ## Future Improvements Checklist
 
 * Multiple digit recognition
 * Handwritten letters or even words
 
-# Notes for Running the code:
+---
 
-### Installing Git on Windows
+## Getting Started
 
-https://www.computerhope.com/issues/ch001927.htm
+### 1. Clone the repo
 
-### Set up SSH key
-
-https://youtu.be/_e4Xf6g_yXg
-
-or
-
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-
-### Cloning the repo
-
-##### In git bash run:
-
+```bash
 git clone git@github.com:sgmdoc7/Handwritten-Digit-Recognizer.git
+cd Handwritten-Digit-Recognizer
+```
 
-##### This will copy the repo and files onto your computer
+### 2. Create and activate a virtual environment
 
+```powershell
+python -m venv venv
+venv\Scripts\activate
+```
 
-### Install Anaconda
+### 3. Install dependencies
 
-https://youtu.be/5mDYijMfSzs
+```powershell
+pip install -r requirements.txt
+```
 
-### From the Anaconda Navigator launch Powershell Prompt and run these commands:
-#### Here we are creating a new environment with tensorflow which is needed for this project
+### 4. Run the app
 
-conda create -n tensorflow_env tensorflow
+```powershell
+python main.py
+```
 
-conda activate tensorflow_env
+A window will open with a **28×28 drawing grid**. Draw a digit with your mouse and the model will predict it in real time. Click **Clear** to reset.
 
-conda install -c anaconda keras
+---
 
-conda install -c anaconda numpy
+## Retraining the Model (Optional)
 
-conda install -c anaconda pandas
+The trained model is already included in the repo (`mnist_digit_model/`), so this step is not required. If you'd like to retrain from scratch:
 
-conda install -c conda-forge matplotlib
+```powershell
+python cnn.py
+```
 
-conda install kivy -c conda-forge
-
-pip install seaborn
-
-conda install -c anaconda scikit-learn
-
-### Now from the Anaconda Navigator, make sure you have selected the tensorflow_env under
-### environments and launch a powershell prompt
-
-run command 'code' to open VS Code in the tensorflow_env or open from anaconda navigator
-
-open folder containing main.py and the mnist_digit_model folder and run main.py
-
+This reads from `digit-recognizer/train.csv` and saves a new model to `mnist_digit_model/`.

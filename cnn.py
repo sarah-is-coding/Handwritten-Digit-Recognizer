@@ -5,11 +5,11 @@ import matplotlib.image as mpimg
 import seaborn as sns
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
-from keras.utils.np_utils import to_categorical  # Convert to one-hot-encoding
+from keras.utils import to_categorical  # Convert to one-hot-encoding
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D
 from tensorflow.keras.optimizers import RMSprop
-from keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from keras.callbacks import ReduceLROnPlateau
 from keras import backend as K
 
@@ -92,4 +92,4 @@ history = model.fit(datagen.flow(x_train,y_train, batch_size=batch_size),
                               verbose = 2, steps_per_epoch=x_train.shape[0] // batch_size
                               , callbacks=[learning_rate_reduction])
 
-model.save('mnist_digit_model')
+model.save('mnist_digit_model.keras')
